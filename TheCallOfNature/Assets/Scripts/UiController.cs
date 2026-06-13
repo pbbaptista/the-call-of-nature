@@ -3,25 +3,35 @@ using UnityEngine.UIElements;
 
 public class UiController : MonoBehaviour
 {
-    public UIDocument uiDocument;
+    public UIDocument uiDocumentStartMenu;
     public Button playButton;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playButton = uiDocument.rootVisualElement.Q<Button>("PlayButton");
+        if (uiDocumentStartMenu == null)
+        {
+            Debug.LogError("UiController: uiDocumentStartMenu is not assigned in the Inspector.");
+            return;
+        }
+
+        playButton = uiDocumentStartMenu.rootVisualElement.Q<Button>("PlayButton");
+        if (playButton == null)
+        {
+            Debug.LogError("UiController: PlayButton not found in UI Document (name 'PlayButton').");
+            return;
+        }
+
+        playButton.clicked += Click_PlayButton;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDestroy()
     {
-        playButton.clicked += Click_PlayButton();
+        if (playButton != null)
+            playButton.clicked -= Click_PlayButton;
     }
 
-    System.Action Click_PlayButton()
+    void Click_PlayButton()
     {
         playButton.style.display = DisplayStyle.None;
-
-        return null;
     }
 }
