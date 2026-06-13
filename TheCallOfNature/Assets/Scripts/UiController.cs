@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 public class UiController : MonoBehaviour
 {
     public GameObject player;
+    public float thrustForce = 1f;
     public UIDocument uiDocumentStartMenu;
     private Button playButton;
     private Label gameTitle;
@@ -56,6 +57,10 @@ public class UiController : MonoBehaviour
         player.GetComponent<Renderer>().enabled = true;
         player.SetActive(true);
         player.transform.localScale = new Vector3(-0.025f, -0.025f);
-        player.transform.position = new Vector3(0f, -2.63f);
+
+        Vector2 direction = new Vector3(0f, -2.63f);
+
+        player.transform.up = direction;
+        player.GetComponent<Rigidbody2D>().AddForce(direction * thrustForce);
     }
 }
