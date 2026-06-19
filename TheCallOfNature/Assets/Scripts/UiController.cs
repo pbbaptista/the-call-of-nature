@@ -25,7 +25,7 @@ public class UiController : MonoBehaviour
             return;
         }
 
-        playButton.clicked += Click_PlayButton;
+        playButton.clicked += LeaveStartMenu;
 
         gameTitle = uiDocumentStartMenu.rootVisualElement.Q<Label>("GameTitle");
 
@@ -46,21 +46,22 @@ public class UiController : MonoBehaviour
     void OnDestroy()
     {
         if (playButton != null)
-            playButton.clicked -= Click_PlayButton;
+            playButton.clicked -= LeaveStartMenu;
     }
 
-    void Click_PlayButton()
+    void LeaveStartMenu()
     {
         playButton.style.display = DisplayStyle.None;
         gameTitle.style.display = DisplayStyle.None;
         uiMainChar.style.display = DisplayStyle.None;
         player.GetComponent<Renderer>().enabled = true;
         player.SetActive(true);
-        player.transform.localScale = new Vector3(-0.025f, -0.025f);
 
-        Vector2 direction = new Vector3(0f, -2.63f);
+        StartTutorial();
+    }
 
-        player.transform.up = direction;
-        player.GetComponent<Rigidbody2D>().AddForce(direction * thrustForce);
+    void StartTutorial()
+    {
+        
     }
 }
