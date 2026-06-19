@@ -1,4 +1,4 @@
-internal class TutorialStep_ClickButton : AbstractTutorialStep, ITutorialStep
+internal class TutorialStep_Poop : AbstractTutorialStep, ITutorialStep
 {
     public void Enter()
     {

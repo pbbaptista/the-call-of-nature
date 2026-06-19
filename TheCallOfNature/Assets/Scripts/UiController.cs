@@ -6,6 +6,8 @@ public class UiController : MonoBehaviour
     public GameObject player;
     public float thrustForce = 1f;
     public UIDocument uiDocumentStartMenu;
+    public GameObject tutorialRunner;
+
     private Button playButton;
     private Label gameTitle;
     private Image uiMainChar;
@@ -53,8 +55,10 @@ public class UiController : MonoBehaviour
     {
         playButton.style.display = DisplayStyle.None;
         gameTitle.style.display = DisplayStyle.None;
-        uiMainChar.style.display = DisplayStyle.None;
-        player.GetComponent<Renderer>().enabled = true;
+        uiMainChar.style.display = DisplayStyle.None;      
+        
         player.SetActive(true);
+
+        tutorialRunner.SetActive(true);
     }
 }
