@@ -56,12 +56,5 @@ public class UiController : MonoBehaviour
         uiMainChar.style.display = DisplayStyle.None;
         player.GetComponent<Renderer>().enabled = true;
         player.SetActive(true);
-
-        StartTutorial();
-    }
-
-    void StartTutorial()
-    {
-        
     }
 }
