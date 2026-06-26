@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: e874570e85a4a70499d984fc55a5aaa1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2239069101323667734
+    second: bird-transparent_0
+  - first:
+      213: -5490662232492334827
+    second: bird-transparent_1
+  - first:
+      213: -2600535988581176645
+    second: bird-transparent_2
+  - first:
+      213: 9106598044766427021
+    second: bird-transparent_3
+  - first:
+      213: -2753476644553287227
+    second: bird-transparent_4
+  - first:
+      213: -5364355313439816948
+    second: bird-transparent_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0.105
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bird-transparent_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2394
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61943fb0c75c21f10800000000000000
+      internalID: 2239069101323667734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird-transparent_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 46
+        width: 6239
+        height: 3592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51124a25acf3dc3b0800000000000000
+      internalID: -5490662232492334827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird-transparent_2
+      rect:
+        serializedVersion: 2
+        x: 6323
+        y: 2394
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbaeffeeb4a09ebd0800000000000000
+      internalID: -2600535988581176645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird-transparent_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2216
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87d1924ca2216e70800000000000000
+      internalID: 9106598044766427021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird-transparent_4
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 40
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c91110949fa9c9d0800000000000000
+      internalID: -2753476644553287227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bird-transparent_5
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 40
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03c075934bfd85b0800000000000000
+      internalID: -5364355313439816948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 15.637207, y: -1796.5916}
+      - {x: 53.166504, y: -1684.0114}
+      - {x: 71.93115, y: -1571.4313}
+      - {x: 84.44092, y: -1490.1234}
+      - {x: 128.2251, y: -1390.0521}
+      - {x: 187.64648, y: -1343.1437}
+      - {x: 256.4502, y: -1274.3447}
+      - {x: 328.38135, y: -1083.584}
+      - {x: 334.63623, y: -989.76715}
+      - {x: 334.63623, y: -736.4618}
+      - {x: 322.12646, y: -589.4822}
+      - {x: 334.63623, y: -576.97327}
+      - {x: 406.56738, y: -426.8664}
+      - {x: 691.16455, y: -476.902}
+      - {x: 825.64453, y: -548.82825}
+      - {x: 1013.291, y: -673.9173}
+      - {x: 1238.4668, y: -802.13354}
+      - {x: 1338.5449, y: -830.2786}
+      - {x: 1476.1523, y: -836.533}
+      - {x: 1626.2695, y: -777.1157}
+      - {x: 1813.916, y: -670.79004}
+      - {x: 2376.8555, y: -433.12085}
+      - {x: 2667.7075, y: -270.50507}
+      - {x: 2777.168, y: -189.19719}
+      - {x: 2864.7363, y: -111.01653}
+      - {x: 2936.6675, y: -26.581425}
+      - {x: 3014.8535, y: 76.61704}
+      - {x: 3080.5298, y: 204.83333}
+      - {x: 3105.5493, y: 276.75952}
+      - {x: 3124.314, y: 392.46692}
+      - {x: 3124.314, y: 551.95544}
+      - {x: 3093.0396, y: 567.59155}
+      - {x: 2958.5596, y: 492.53815}
+      - {x: 2958.5596, y: 542.5738}
+      - {x: 2942.9224, y: 555.0827}
+      - {x: 2899.1382, y: 555.0827}
+      - {x: 2764.6582, y: 486.2837}
+      - {x: 2683.3447, y: 480.02924}
+      - {x: 2598.9038, y: 486.2837}
+      - {x: 2455.0415, y: 398.72137}
+      - {x: 2417.5122, y: 351.81296}
+      - {x: 2273.65, y: 320.5407}
+      - {x: 2139.17, y: 264.25064}
+      - {x: 2117.2778, y: 292.39566}
+      - {x: 2067.2388, y: 295.5229}
+      - {x: 2004.69, y: 267.37784}
+      - {x: 1939.0137, y: 229.85114}
+      - {x: 1863.9551, y: 242.36005}
+      - {x: 1748.2397, y: 176.6883}
+      - {x: 1704.4556, y: 207.96056}
+      - {x: 1620.0146, y: 170.43384}
+      - {x: 1557.4658, y: 186.06996}
+      - {x: 1444.8779, y: 111.01653}
+      - {x: 1444.8779, y: 170.43384}
+      - {x: 1391.7114, y: 192.32442}
+      - {x: 1357.3096, y: 170.43384}
+      - {x: 1344.7998, y: 229.85114}
+      - {x: 1316.6528, y: 245.48727}
+      - {x: 1257.2314, y: 248.6145}
+      - {x: 1210.3198, y: 211.08778}
+      - {x: 1166.5356, y: 251.74171}
+      - {x: 1122.7515, y: 286.1412}
+      - {x: 1129.0063, y: 351.81296}
+      - {x: 1085.2222, y: 367.4491}
+      - {x: 1013.291, y: 336.17682}
+      - {x: 935.105, y: 383.08524}
+      - {x: 838.1543, y: 414.35748}
+      - {x: 713.05664, y: 417.4847}
+      - {x: 603.5962, y: 408.10303}
+      - {x: 544.1748, y: 367.4491}
+      - {x: 531.66504, y: 392.46692}
+      - {x: 484.75342, y: 404.9758}
+      - {x: 353.40088, y: 411.23026}
+      - {x: 306.48926, y: 564.46436}
+      - {x: 193.90137, y: 836.533}
+      - {x: 197.02881, y: 942.85876}
+      - {x: 347.146, y: 1440.0878}
+      - {x: 400.3125, y: 1577.6857}
+      - {x: 406.56738, y: 1690.2659}
+      - {x: 278.3423, y: 1746.5559}
+      - {x: 153.24463, y: 1777.8281}
+      - {x: 40.65674, y: 1793.4644}
+      - {x: -125.09766, y: 1793.4644}
+      - {x: -184.51904, y: 1790.337}
+      - {x: -297.10693, y: 1759.0648}
+      - {x: -375.29297, y: 1737.1742}
+      - {x: -437.8418, y: 1693.3931}
+      - {x: -456.60645, y: 1652.7391}
+      - {x: -444.09668, y: 1537.0317}
+      - {x: -397.18506, y: 1386.9249}
+      - {x: -259.57764, y: 1008.5305}
+      - {x: -234.5581, y: 899.0776}
+      - {x: -234.5581, y: 814.64246}
+      - {x: -390.93018, y: 436.24808}
+      - {x: -503.51807, y: 401.84857}
+      - {x: -556.6846, y: 389.3397}
+      - {x: -641.1255, y: 414.35748}
+      - {x: -731.8213, y: 420.61194}
+      - {x: -831.8994, y: 414.35748}
+      - {x: -881.9385, y: 389.3397}
+      - {x: -938.2324, y: 367.4491}
+      - {x: -1107.1143, y: 364.32187}
+      - {x: -1116.4966, y: 276.75952}
+      - {x: -1097.7319, y: 251.74171}
+      - {x: -1157.1533, y: 261.1234}
+      - {x: -1194.6826, y: 226.7239}
+      - {x: -1260.3589, y: 254.86894}
+      - {x: -1332.29, y: 232.97836}
+      - {x: -1351.0547, y: 176.6883}
+      - {x: -1401.0938, y: 182.94275}
+      - {x: -1466.77, y: 145.41603}
+      - {x: -1548.0835, y: 182.94275}
+      - {x: -1613.7598, y: 173.56107}
+      - {x: -1691.9458, y: 211.08778}
+      - {x: -1851.4453, y: 239.23282}
+      - {x: -1888.9746, y: 226.7239}
+      - {x: -1979.6704, y: 267.37784}
+      - {x: -2098.5132, y: 314.28625}
+      - {x: -2120.4053, y: 254.86894}
+      - {x: -2301.7969, y: 333.04962}
+      - {x: -2392.4927, y: 342.43127}
+      - {x: -2467.5513, y: 420.61194}
+      - {x: -2564.502, y: 476.902}
+      - {x: -2655.1978, y: 480.02924}
+      - {x: -2661.4526, y: 467.52032}
+      - {x: -2667.3765, y: 429.01865}
+      - {x: -2695.8545, y: 445.62976}
+      - {x: -2745.8936, y: 483.15646}
+      - {x: -2770.913, y: 495.66537}
+      - {x: -2877.246, y: 551.95544}
+      - {x: -2933.54, y: 558.2099}
+      - {x: -2955.4321, y: 542.5738}
+      - {x: -2942.9224, y: 495.66537}
+      - {x: -3099.2944, y: 580.10046}
+      - {x: -3111.8042, y: 561.33716}
+      - {x: -3111.8042, y: 308.0318}
+      - {x: -3055.5103, y: 167.30661}
+      - {x: -2958.5596, y: -1.5636132}
+      - {x: -2883.501, y: -79.74427}
+      - {x: -2755.276, y: -198.57887}
+      - {x: -2655.1978, y: -267.37784}
+      - {x: -2442.5317, y: -392.46692}
+      - {x: -2301.7969, y: -455.01144}
+      - {x: -1863.9551, y: -645.7722}
+      - {x: -1666.9263, y: -745.8435}
+      - {x: -1551.2109, y: -799.00635}
+      - {x: -1466.77, y: -836.533}
+      - {x: -1269.7412, y: -827.15137}
+      - {x: -1132.1338, y: -758.3524}
+      - {x: -788.11523, y: -526.9376}
+      - {x: -622.36084, y: -458.13867}
+      - {x: -431.5869, y: -426.8664}
+      - {x: -422.2046, y: -442.50253}
+      - {x: -415.9497, y: -451.88422}
+      - {x: -409.69482, y: -467.52032}
+      - {x: -403.43994, y: -476.902}
+      - {x: -397.18506, y: -495.66537}
+      - {x: -390.93018, y: -505.04706}
+      - {x: -384.6753, y: -526.9376}
+      - {x: -372.16553, y: -539.44653}
+      - {x: -390.93018, y: -930.34985}
+      - {x: -350.27344, y: -1124.2379}
+      - {x: -309.6167, y: -1249.3269}
+      - {x: -209.53857, y: -1371.2887}
+      - {x: -128.2251, y: -1411.9427}
+      - {x: -112.58789, y: -1537.0317}
+      - {x: -68.80371, y: -1777.8281}
+      - {x: -34.401855, y: -1799.7188}
+      - {x: -3.1274414, y: -1799.7188}
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bird-transparent_0: 2239069101323667734
+      bird-transparent_1: -5490662232492334827
+      bird-transparent_2: -2600535988581176645
+      bird-transparent_3: 9106598044766427021
+      bird-transparent_4: -2753476644553287227
+      bird-transparent_5: -5364355313439816948
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

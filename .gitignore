@@ -3,7 +3,6 @@
 Packages/
 Temp/
 UserSettings/
-*.meta
 TheCallOfNature/Library/
 
 # This .gitignore file should be placed at the root of your Unity project directory
@@ -15,12 +14,19 @@ TheCallOfNature/Library/
 #
 .utmp/
 /[Ll]ibrary/
+/[Ll]ibrary/**/*.meta
 /[Tt]emp/
+/[Tt]emp/**/*.meta
 /[Oo]bj/
+/[Oo]bj/**/*.meta
 /[Bb]uild/
+/[Bb]uild/**/*.meta
 /[Bb]uilds/
+/[Bb]uilds/**/*.meta
 /[Ll]ogs/
+/[Ll]ogs/**/*.meta
 /[Uu]ser[Ss]ettings/
+/[Uu]ser[Ss]ettings/**/*.meta
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
@@ -30,9 +36,11 @@ TheCallOfNature/Library/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
+/[Mm]emoryCaptures/**/*.meta
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+/[Rr]ecordings/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -99,11 +107,13 @@ InitTestScene*.unity*
 /ServerData
 /[Aa]ssets/StreamingAssets/aa*
 /[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/AddressableAssetsData/link.xml*.meta
 /[Aa]ssets/Addressables_Temp*
 # By default, Addressables content builds will generate addressables_content_state.bin
 # files in platform-specific subfolders, for example:
 # /Assets/AddressableAssetsData/OSX/addressables_content_state.bin
 /[Aa]ssets/AddressableAssetsData/*/*.bin*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*.meta
 
 # Visual Scripting auto-generated files
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
