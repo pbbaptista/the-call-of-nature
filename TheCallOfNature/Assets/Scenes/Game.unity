@@ -653,6 +653,7 @@ Transform:
   - {fileID: 1678793455}
   - {fileID: 2077272400}
   - {fileID: 1751483162}
+  - {fileID: 1426990017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
@@ -1506,7 +1507,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0015, y: -2.99, z: 0}
-  m_LocalScale: {x: -0.24122508, y: -0.24122508, z: -0.24122508}
+  m_LocalScale: {x: -0.17626317, y: -0.17626317, z: -0.17626317}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1578,7 +1579,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.189, y: 20.1, z: 0}
-  m_LocalScale: {x: 0.29029605, y: 0.24829002, z: 0.2497385}
+  m_LocalScale: {x: 0.23159818, y: 0.24680029, z: 0.2497385}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 609123755}
@@ -1765,6 +1766,37 @@ Transform:
   - {fileID: 1943229140}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426990016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426990017}
+  m_Layer: 0
+  m_Name: MovementTutorialTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426990017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426990016}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 609123755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678793454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133ba17f180993941a65d86504b2168b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialStep_Move
+  movement: {fileID: 0}
+  threshold: 0.5
 --- !u!1 &1751483161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,7 +1897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943229140}
   m_Layer: 0
-  m_Name: BlueBg
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2199,8 +2233,8 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 216070505}
   - {fileID: 1346687111}
-  - {fileID: 1177653554}
   - {fileID: 1196822024}
   - {fileID: 1946574024}
   - {fileID: 609123755}
+  - {fileID: 1177653554}
   - {fileID: 1121176990}
