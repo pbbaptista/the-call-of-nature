@@ -647,13 +647,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1426990017}
   - {fileID: 76019908}
   - {fileID: 1255783885}
   - {fileID: 755053648}
   - {fileID: 1678793455}
   - {fileID: 2077272400}
   - {fileID: 1751483162}
-  - {fileID: 1426990017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
@@ -1775,8 +1775,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426990017}
+  - component: {fileID: 1426990018}
   m_Layer: 0
-  m_Name: MovementTutorialTracker
+  m_Name: GyroLateralMovement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1797,6 +1798,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 609123755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426990018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426990016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec68a4361708f074eb0f4fa6f42c989b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.GyroLateralMovement
+  forwardSpeed: 5
+  horizontalSensitivity: 3
+  verticalSensitivity: 3
+  maxHorizontalOffset: 4
+  maxVerticalOffset: 3
 --- !u!1 &1678793454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,7 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133ba17f180993941a65d86504b2168b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialStep_Move
-  movement: {fileID: 0}
+  movement: {fileID: 1426990018}
   threshold: 0.5
 --- !u!1 &1751483161
 GameObject:

@@ -4,7 +4,7 @@ public abstract class AbstractTutorialStep : MonoBehaviour
 {
     public System.Action OnCompleted;
 
-    private void Complete()
+    internal void Complete()
     {
         OnCompleted.Invoke();
     }
