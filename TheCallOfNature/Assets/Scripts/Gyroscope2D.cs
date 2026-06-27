@@ -3,8 +3,7 @@ using UnityEngine;
 public class Gyroscope2D : MonoBehaviour
 {
     private Rigidbody2D rigidBody2D;
-    private float horizontalInput;
-    private float verticalInput;
+    private float horizontalInput, verticalInput;
 
     [SerializeField] private float horizontalSpeed = 3f; // Adjustable in the Inspector
     [SerializeField] private float verticalSpeed = 10f; // Adjustable in the Inspector
