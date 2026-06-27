@@ -2232,7 +2232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24575663b2562f940b4c1921a3b4c392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gyroscope2D
-  speed: 5
+  horizontalSpeed: 3
+  verticalSpeed: 10
 --- !u!1 &1255783884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133ba17f180993941a65d86504b2168b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialStep_Move
-  movement: {fileID: 0}
   threshold: 0.5
 --- !u!1 &1751483161
 GameObject:

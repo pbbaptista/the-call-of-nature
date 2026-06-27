@@ -6,7 +6,8 @@ public class Gyroscope2D : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
 
-    [SerializeField] private float speed = 5f; // Adjustable in the Inspector
+    [SerializeField] private float horizontalSpeed = 3f; // Adjustable in the Inspector
+    [SerializeField] private float verticalSpeed = 10f; // Adjustable in the Inspector
 
     void Start()
     {
@@ -16,8 +17,8 @@ public class Gyroscope2D : MonoBehaviour
     void Update()
     {
         // Get horizontal acceleration input without inverting direction
-        horizontalInput = Input.acceleration.x * speed;
-        verticalInput = Input.acceleration.y * speed;
+        horizontalInput = Input.acceleration.x * horizontalSpeed;
+        verticalInput = Input.acceleration.y * verticalSpeed;
     }
 
     void FixedUpdate()
