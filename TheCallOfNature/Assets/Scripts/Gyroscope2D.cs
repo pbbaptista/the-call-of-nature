@@ -4,6 +4,7 @@ public class Gyroscope2D : MonoBehaviour
 {
     private Rigidbody2D rigidBody2D;
     private float horizontalInput;
+    private float verticalInput;
 
     [SerializeField] private float speed = 5f; // Adjustable in the Inspector
 
@@ -16,16 +17,18 @@ public class Gyroscope2D : MonoBehaviour
     {
         // Get horizontal acceleration input without inverting direction
         horizontalInput = Input.acceleration.x * speed;
+        verticalInput = Input.acceleration.y * speed;
 
         // Clamp position within specified range
-        float clampedX = Mathf.Clamp(transform.position.x, -7.5f, 7.5f);
-        transform.position = new Vector2(clampedX, transform.position.y);
+        //float clampedX = Mathf.Clamp(transform.position.x, -7.5f, 7.5f);
+        //float clampedY = Mathf.Clamp(transform.position.y, -7.5f, 7.5f);
+        //transform.position = new Vector2(clampedX, clampedY);
     }
 
     void FixedUpdate()
     {
         // Update Rigidbody2D velocity based on input
-        Vector2 movement = new Vector2(horizontalInput, 0f);
-        rigidBody2D.linearVelocity = movement;
+        rigidBody2D.linearVelocityX = horizontalInput;
+        rigidBody2D.linearVelocityY = verticalInput;
     }
 }
