@@ -4,7 +4,7 @@ using UnityEngine;
 internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
 {
 
-    public GyroLateralMovement movement;
+    public Gyroscope2D movement;
     public float threshold = 0.5f; // how far off-center counts as "moved"
 
     private bool movedLeft, movedRight, movedUp, movedDown;
@@ -14,18 +14,18 @@ internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
 
     void Update()
     {
-        float h = movement.NormalizedHorizontal;
-        float v = movement.NormalizedVertical;
+        //float h = movement.NormalizedHorizontal;
+        //float v = movement.NormalizedVertical;
 
-        if (h < -threshold) movedLeft = true;
-        if (h > threshold) movedRight = true;
-        if (v > threshold) movedUp = true;
-        if (v < -threshold) movedDown = true;
+        //if (h < -threshold) movedLeft = true;
+        //if (h > threshold) movedRight = true;
+        //if (v > threshold) movedUp = true;
+        //if (v < -threshold) movedDown = true;
 
-        if (TutorialMovementComplete)
-        {
-            this.Complete();
-        }
+        //if (TutorialMovementComplete)
+        //{
+        //    this.Complete();
+        //}
     }
 
 
