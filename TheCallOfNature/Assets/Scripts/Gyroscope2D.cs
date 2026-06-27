@@ -18,11 +18,6 @@ public class Gyroscope2D : MonoBehaviour
         // Get horizontal acceleration input without inverting direction
         horizontalInput = Input.acceleration.x * speed;
         verticalInput = Input.acceleration.y * speed;
-
-        // Clamp position within specified range
-        //float clampedX = Mathf.Clamp(transform.position.x, -7.5f, 7.5f);
-        //float clampedY = Mathf.Clamp(transform.position.y, -7.5f, 7.5f);
-        //transform.position = new Vector2(clampedX, clampedY);
     }
 
     void FixedUpdate()
