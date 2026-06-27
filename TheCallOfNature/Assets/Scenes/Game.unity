@@ -2493,7 +2493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133ba17f180993941a65d86504b2168b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialStep_Move
-  threshold: 0.5
+  threshold: 1
+  player: {fileID: 1196822022}
 --- !u!1 &1751483161
 GameObject:
   m_ObjectHideFlags: 0
