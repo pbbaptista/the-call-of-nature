@@ -32,12 +32,10 @@ internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
     public void Enter()
     {
         // show prompt, start tracking directions
-        movement.enabled = true;
     }
 
     public void Exit()
     {
         // stop tracking / unsubscribe
-        movement.enabled = false;
     }
 }
