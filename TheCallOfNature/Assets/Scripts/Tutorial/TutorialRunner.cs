@@ -20,9 +20,12 @@ public class TutorialRunner : MonoBehaviour
 
         Begin(stepMove, "move");
 
-        stepMove.OnCompleted += () => Begin(stepPoop, "poop");
-        stepPoop.OnCompleted += () => Begin(stepDodge, "dodge");
-        stepDodge.OnCompleted += () => Begin(stepScare, "scare");
+        //stepMove.OnCompleted += () => Begin(stepPoop, "poop");
+        //stepPoop.OnCompleted += () => Begin(stepDodge, "dodge");
+        //stepDodge.OnCompleted += () => Begin(stepScare, "scare");
+
+        // TODO: to go back to original order once all steps of the tutorial are implemented
+        stepMove.OnCompleted += () => Begin(stepScare, "scare");
     }
 
     private void Begin(ITutorialStep next, string directiveName)
