@@ -27,6 +27,7 @@ public abstract class AbstractTutorialStep : MonoBehaviour
 
     internal void Enter(UIDocument uiTutorialDocument, string directiveName)
     {
+        this.enabled = true;
         _uiTutorialDocument = uiTutorialDocument;
         _directiveName = directiveName;
         ShowStepDirective();
