@@ -20,22 +20,28 @@ public class TutorialRunner : MonoBehaviour
     {
         tutorialBg.SetActive(true);
 
-        Begin(stepMove, "move");
+        Begin(stepScare, "scare", unlockMovement: true);
 
-        //stepMove.OnCompleted += () => Begin(stepPoop, "poop");
-        //stepPoop.OnCompleted += () => Begin(stepDodge, "dodge");
-        //stepDodge.OnCompleted += () => Begin(stepScare, "scare");
+        // Begin(stepPoop, "scare", unlockMovement: true);
+
+        //stepPoop.OnCompleted += () => Begin(stepScare, "scare", unlockMovement: true);
+        //stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: false);
+        //stepMove.OnCompleted += () => Begin(stepDodge, "dodge", unlockMovement: false);
 
         // TODO: to go back to original order once all steps of the tutorial are implemented
-        stepMove.OnCompleted += () => Begin(stepScare, "scare");
+        stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: false);
     }
 
-    private void Begin(ITutorialStep next, string directiveName)
+    private void Begin(ITutorialStep next, string directiveName, bool unlockMovement)
     {
         _current?.Exit();
         _current = next;
-        // put bird back in original position
-        player.transform.position = new Vector3(0, -2.99f);
+
+        var rb = player.GetComponent<Rigidbody2D>();
+        if (unlockMovement) {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        
         _current.Enter(uiTutorialDocument, directiveName);
     }
 

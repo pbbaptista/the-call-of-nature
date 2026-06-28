@@ -307,7 +307,7 @@ MonoBehaviour:
   stepScare: {fileID: 1751483163}
   uiTutorialDocument: {fileID: 1121176989}
   player: {fileID: 1196822022}
-  tutorialBg: {fileID: 1255783884}
+  tutorialBg: {fileID: 219229218}
 --- !u!1 &118566604
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,12 +540,12 @@ GameObject:
   m_Component:
   - component: {fileID: 219229219}
   m_Layer: 0
-  m_Name: Street
+  m_Name: TutorialBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &219229219
 Transform:
   m_ObjectHideFlags: 0
@@ -2254,7 +2254,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &1196822031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,12 +2280,12 @@ GameObject:
   - component: {fileID: 1255783885}
   - component: {fileID: 1255783886}
   m_Layer: 0
-  m_Name: TutorialBg
+  m_Name: Street
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1255783885
 Transform:
   m_ObjectHideFlags: 0
@@ -2636,7 +2636,7 @@ Transform:
   m_GameObject: {fileID: 1895770064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.65, y: 11.36, z: 0}
+  m_LocalPosition: {x: 2.38, y: 1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
