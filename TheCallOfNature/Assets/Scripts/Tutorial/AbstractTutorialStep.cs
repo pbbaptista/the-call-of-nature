@@ -35,6 +35,7 @@ public abstract class AbstractTutorialStep : MonoBehaviour
     internal void Exit()
     {
         HideStepDirective();
+        this.enabled = false;
     }
 
 }

@@ -7,7 +7,9 @@ public class TutorialRunner : MonoBehaviour
     [SerializeField] private TutorialStep_Move stepMove;
     [SerializeField] private TutorialStep_Poop stepPoop;
     [SerializeField] private TutorialStep_ScarePeople stepScare;
-    public UIDocument uiTutorialDocument;
+    [SerializeField] private UIDocument uiTutorialDocument;
+    [SerializeField] private GameObject player;
+
 
     public GameObject tutorialBg;
 
@@ -32,6 +34,8 @@ public class TutorialRunner : MonoBehaviour
     {
         _current?.Exit();
         _current = next;
+        // put bird back in original position
+        player.transform.position = new Vector3(0, -2.99f);
         _current.Enter(uiTutorialDocument, directiveName);
     }
 
