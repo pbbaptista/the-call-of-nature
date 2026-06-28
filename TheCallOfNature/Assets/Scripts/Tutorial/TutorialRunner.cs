@@ -20,16 +20,16 @@ public class TutorialRunner : MonoBehaviour
     {
         tutorialBg.SetActive(true);
 
-        Begin(stepScare, "scare", unlockMovement: true);
+        Begin(stepScare, "scare", unlockMovement: false);
 
         // Begin(stepPoop, "scare", unlockMovement: true);
 
-        //stepPoop.OnCompleted += () => Begin(stepScare, "scare", unlockMovement: true);
-        //stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: false);
-        //stepMove.OnCompleted += () => Begin(stepDodge, "dodge", unlockMovement: false);
+        //stepPoop.OnCompleted += () => Begin(stepScare, "scare", unlockMovement: false);
+        //stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: true);
+        //stepMove.OnCompleted += () => Begin(stepDodge, "dodge", unlockMovement: true);
 
         // TODO: to go back to original order once all steps of the tutorial are implemented
-        stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: false);
+        stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: true);
     }
 
     private void Begin(ITutorialStep next, string directiveName, bool unlockMovement)
