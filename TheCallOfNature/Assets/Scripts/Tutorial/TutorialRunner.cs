@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TutorialRunner : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class TutorialRunner : MonoBehaviour
     [SerializeField] private TutorialStep_Move stepMove;
     [SerializeField] private TutorialStep_Poop stepPoop;
     [SerializeField] private TutorialStep_ScarePeople stepScare;
+    public UIDocument uiTutorialDocument;
 
     public GameObject tutorialBg;
 
@@ -16,18 +18,18 @@ public class TutorialRunner : MonoBehaviour
     {
         tutorialBg.SetActive(true);
 
-        Begin(stepMove);
+        Begin(stepMove, "move");
 
-        stepMove.OnCompleted += () => Begin(stepPoop);
-        stepPoop.OnCompleted += () => Begin(stepDodge);
-        stepDodge.OnCompleted += () => Begin(stepScare);
+        stepMove.OnCompleted += () => Begin(stepPoop, "poop");
+        stepPoop.OnCompleted += () => Begin(stepDodge, "dodge");
+        stepDodge.OnCompleted += () => Begin(stepScare, "scare");
     }
 
-    private void Begin(ITutorialStep next)
+    private void Begin(ITutorialStep next, string directiveName)
     {
         _current?.Exit();
         _current = next;
-        _current.Enter();
+        _current.Enter(uiTutorialDocument, directiveName);
     }
 
     // Update is called once per frame

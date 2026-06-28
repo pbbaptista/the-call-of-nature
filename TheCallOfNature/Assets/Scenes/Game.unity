@@ -305,6 +305,7 @@ MonoBehaviour:
   stepMove: {fileID: 1678793456}
   stepPoop: {fileID: 2077272401}
   stepScare: {fileID: 1751483163}
+  uiTutorialDocument: {fileID: 1121176989}
   tutorialBg: {fileID: 1255783884}
 --- !u!1 &118566604
 GameObject:

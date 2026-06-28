@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
 {
@@ -6,19 +7,19 @@ internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
     public float threshold = 1f;
     
     public GameObject player;
+    public bool TutorialMovementComplete =>
+    movedLeft && movedRight && movedUp && movedDown;
+
 
     private Vector3 startPosition;
     private bool movedLeft, movedRight, movedUp, movedDown;
 
-    public bool TutorialMovementComplete =>
-        movedLeft && movedRight && movedUp && movedDown;
-
-    void Start()
+    public void Start()
     {
         startPosition = player.transform.position;
     }
 
-    void Update()
+    public void Update()
     {
         var currentPosition = player.transform.position;
 
@@ -43,14 +44,13 @@ internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
         }
     }
 
-
-    public void Enter()
+    void ITutorialStep.Enter(UIDocument uiTutorialDocument, string directiveName)
     {
-        // show prompt, start tracking directions
+        Enter(uiTutorialDocument, directiveName);
     }
 
-    public void Exit()
+    void ITutorialStep.Exit()
     {
-        // stop tracking / unsubscribe
+        Exit();
     }
 }

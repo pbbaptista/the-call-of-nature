@@ -1,12 +1,14 @@
+using UnityEngine.UIElements;
+
 internal class TutorialStep_Dodge : AbstractTutorialStep, ITutorialStep
 {
-    public void Enter()
+    void ITutorialStep.Enter(UIDocument uiTutorialDocument, string directiveName)
     {
-        // show prompt, start tracking input
+        Enter(uiTutorialDocument, directiveName);
     }
 
-    public void Exit()
+    void ITutorialStep.Exit()
     {
-        // stop tracking / unsubscribe
+        Exit();
     }
 }
