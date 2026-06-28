@@ -37,9 +37,9 @@ public class TutorialRunner : MonoBehaviour
         _current?.Exit();
         _current = next;
 
-        var rb = player.GetComponent<Rigidbody2D>();
         if (unlockMovement) {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            // by default, RigidBody2D component has both FreezeRotation and FreezePosition values
+            player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         
         _current.Enter(uiTutorialDocument, directiveName);
