@@ -14,6 +14,8 @@ public class Gyroscope2D : MonoBehaviour
         rigidBody2D = GetComponent<Rigidbody2D>();
         if (UnityEngine.InputSystem.Gyroscope.current != null)
             InputSystem.EnableDevice(UnityEngine.InputSystem.Gyroscope.current);
+        if (UnityEngine.InputSystem.Accelerometer.current != null)
+            InputSystem.EnableDevice(Accelerometer.current);
     }
 
     void Update()
