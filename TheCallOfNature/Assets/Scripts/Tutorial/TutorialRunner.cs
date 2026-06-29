@@ -30,6 +30,9 @@ public class TutorialRunner : MonoBehaviour
 
         // TODO: to go back to original order once all steps of the tutorial are implemented
         stepScare.OnCompleted += () => Begin(stepMove, "move", unlockMovement: true);
+
+        // on final step of tutorial, show end screen
+        stepMove.OnCompleted += () => EndTutorial(finalStep: stepMove);
     }
 
     private void Begin(ITutorialStep next, string directiveName, bool unlockMovement)
@@ -49,5 +52,12 @@ public class TutorialRunner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void EndTutorial(ITutorialStep finalStep)
+    {
+        finalStep.Exit();
+        tutorialBg.SetActive(false);
+        player.SetActive(false);
     }
 }

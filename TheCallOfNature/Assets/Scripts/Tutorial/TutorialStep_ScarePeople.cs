@@ -29,5 +29,7 @@ internal class TutorialStep_ScarePeople : AbstractTutorialStep, ITutorialStep
 
     public void Update()
     {
+        if (GameObject.FindWithTag("Person") == null)
+            Complete();
     }
 }
