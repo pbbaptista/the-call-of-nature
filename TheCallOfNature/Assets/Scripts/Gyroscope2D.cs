@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Gyroscope2D : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class Gyroscope2D : MonoBehaviour
     void Update()
     {
         // Get horizontal acceleration input without inverting direction
-        horizontalInput = Input.acceleration.x * horizontalSpeed;
-        verticalInput = Input.acceleration.y * verticalSpeed;
+        horizontalInput = Accelerometer.current.acceleration.ReadValue().x * horizontalSpeed;
+        verticalInput = Accelerometer.current.acceleration.ReadValue().y * verticalSpeed;
     }
 
     void FixedUpdate()
