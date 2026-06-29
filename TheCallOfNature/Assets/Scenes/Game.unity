@@ -545,7 +545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &219229219
 Transform:
   m_ObjectHideFlags: 0
@@ -4953,7 +4953,8 @@ ParticleSystem:
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
-    m_Planes: []
+    m_Planes:
+    - {fileID: 0}
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
@@ -6781,7 +6782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1196822023
 SpriteRenderer:
   serializedVersion: 2
@@ -6870,6 +6871,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   player: {fileID: 1196822022}
+  audioThreshold: 0.1
+  loudnessSensibility: 125
+  detector: {fileID: 1322051527}
+  soundwave: {fileID: 734445395}
 --- !u!60 &1196822028
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7515,9 +7520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b6c466d3066034e840441e313d34e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialStep_ScarePeople
-  audioThreshold: 0.1
-  loudnessSensibility: 150
-  detector: {fileID: 1322051527}
 --- !u!82 &1751483164
 AudioSource:
   m_ObjectHideFlags: 0
