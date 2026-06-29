@@ -9,7 +9,8 @@ internal class TutorialStep_ScarePeople : AbstractTutorialStep, ITutorialStep
     void ITutorialStep.Enter(UIDocument uiTutorialDocument, string directiveName)
     {
         Enter(uiTutorialDocument, directiveName);
-        if (Permission.HasUserAuthorizedPermission(Permission.Microphone))
+        if (Permission.HasUserAuthorizedPermission(Permission.Microphone) 
+            || Application.HasUserAuthorization(UserAuthorization.Microphone))
         {
             // The user has authorized use of the microphone.
         }
@@ -18,6 +19,7 @@ internal class TutorialStep_ScarePeople : AbstractTutorialStep, ITutorialStep
             // The user has not authorized microphone usage.
             // Ask for microphone permission.
             Permission.RequestUserPermission(Permission.Microphone);
+            Application.RequestUserAuthorization(UserAuthorization.Microphone);
         }
     }
 
