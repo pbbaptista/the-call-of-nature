@@ -13,4 +13,9 @@ public class PersonController : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log($"A collider has entered the {nameof(PersonController)} trigger");
+    }
 }
