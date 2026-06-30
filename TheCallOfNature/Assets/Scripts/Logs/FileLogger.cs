@@ -19,7 +19,7 @@ public class FileLogger : MonoBehaviour
 
     void HandleLog(string logString, string stackTrace, LogType type)
     {
-        writer.WriteLine($"[{DateTime.UtcNow:HH:mm:ss.fff}] [{type}] {logString}");
+        writer.WriteLine($"[{DateTime.UtcNow}] [{type}] {logString}");
         if (type == LogType.Exception || type == LogType.Error)
             writer.WriteLine(stackTrace);
     }
