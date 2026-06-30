@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -27,6 +28,8 @@ public class LogSharer : MonoBehaviour
             Debug.LogWarning("Log file not found at: " + path);
             return;
         }
+
+        fileLogger.Close();
 
         new NativeShare()
             .AddFile(path)

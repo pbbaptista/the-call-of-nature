@@ -26,6 +26,13 @@ public class FileLogger : MonoBehaviour
 
     public string GetLogFilePath() => logFilePath;
 
+    public void Close()
+    {
+        Application.logMessageReceived -= HandleLog;
+        writer?.Flush();
+        writer?.Close();
+    }
+
     void OnDestroy()
     {
         Application.logMessageReceived -= HandleLog;
