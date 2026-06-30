@@ -4,6 +4,7 @@ public class PersonController : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 3;
+    [SerializeField] private GameObject scaredIndicator;
 
     private Rigidbody2D rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +22,8 @@ public class PersonController : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         Debug.Log($"A collider has entered the {nameof(PersonController)} trigger");
+
+        scaredIndicator.SetActive(true);
         // find closest off-screen side and move person in that direction
         Vector2 newPosition = gameObject.transform.position.x < 0 
             // move left
@@ -34,6 +37,7 @@ public class PersonController : MonoBehaviour
 
     void OnBecameInvisible()
     {
+        scaredIndicator.SetActive(false);
         Debug.Log($"Destroying Person {nameof(gameObject.name)} that moved off-screen");
         Destroy(gameObject);
     }
