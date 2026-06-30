@@ -43,7 +43,7 @@ public class AudioLoudnessDetection : MonoBehaviour
 
     public void MicrophoneToAudioClip()
     {
-        if (microphoneStartedRecording && Microphone.devices.Length > 0)
+        if (Microphone.devices.Length > 0)
         {
             microphoneName = Microphone.devices[0];
             microphoneClip = Microphone.Start(microphoneName, true, 20, AudioSettings.outputSampleRate);
