@@ -27,7 +27,7 @@ public class Gyroscope2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (horizontalInput + verticalInput > 0)
+        if (Mathf.Abs(horizontalInput + verticalInput) > 0)
         {            
             // Update Rigidbody2D velocity based on input
             rigidBody2D.linearVelocityX = horizontalInput;
