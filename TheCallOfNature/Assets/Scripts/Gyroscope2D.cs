@@ -27,11 +27,11 @@ public class Gyroscope2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log($"{nameof(Gyroscope2D.FixedUpdate)}: Moving bird towards " +
-            $"{nameof(horizontalInput)} {horizontalInput} at speed {horizontalSpeed}" +
-            $"and {nameof(verticalInput)} {verticalInput} at speed {verticalSpeed}");
-        // Update Rigidbody2D velocity based on input
-        rigidBody2D.linearVelocityX = horizontalInput;
-        rigidBody2D.linearVelocityY = verticalInput;
+        if (horizontalInput + verticalInput > 0)
+        {            
+            // Update Rigidbody2D velocity based on input
+            rigidBody2D.linearVelocityX = horizontalInput;
+            rigidBody2D.linearVelocityY = verticalInput;
+        }
     }
 }
