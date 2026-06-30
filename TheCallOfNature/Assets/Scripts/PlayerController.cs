@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Android;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,19 +20,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float loudness = detector.GetLoudnessFromMicrophone() * loudnessSensibility;
-        if (loudness > audioThreshold)
+        if (Permission.HasUserAuthorizedPermission(Permission.Microphone)
+            || Application.HasUserAuthorization(UserAuthorization.Microphone))
         {
-            soundwave.SetActive(true);
-            // scare people away
-            Debug.Log($"Triggering soundwave that scares people away. \r\n" +
-                $" {nameof(loudness)}: {loudness}, \r\n " +
-                $"{nameof(loudnessSensibility)} : {loudnessSensibility}, \r\n" +
-                $" {nameof(audioThreshold)}: {audioThreshold}.");
-        }
-        else
-        {
-            soundwave.SetActive(false);
+            float loudness = detector.GetLoudnessFromMicrophone() * loudnessSensibility;
+            if (loudness > audioThreshold)
+            {
+                soundwave.SetActive(true);
+                // scare people away
+                Debug.Log($"Triggering soundwave that scares people away. \r\n" +
+                    $" {nameof(loudness)}: {loudness}, \r\n " +
+                    $"{nameof(loudnessSensibility)} : {loudnessSensibility}, \r\n" +
+                    $" {nameof(audioThreshold)}: {audioThreshold}.");
+            }
+            else
+            {
+                soundwave.SetActive(false);
+            }
         }
     }
 }

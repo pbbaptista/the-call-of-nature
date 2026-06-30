@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class AudioLoudnessDetection : MonoBehaviour
 {
@@ -14,16 +15,30 @@ public class AudioLoudnessDetection : MonoBehaviour
 
     private AudioClip microphoneClip;
     private string microphoneName;
+    private bool microphoneStartedRecording;
 
     void Start()
     {
-        MicrophoneToAudioClip();
+        if (Permission.HasUserAuthorizedPermission(Permission.Microphone)
+            || Application.HasUserAuthorization(UserAuthorization.Microphone))
+        {
+            MicrophoneToAudioClip();
+            microphoneStartedRecording = true;
+        }
     }
 
 
     void Update()
     {
-        
+        if (!microphoneStartedRecording)
+        {
+            if (Permission.HasUserAuthorizedPermission(Permission.Microphone)
+            || Application.HasUserAuthorization(UserAuthorization.Microphone))
+            {
+                MicrophoneToAudioClip();
+                microphoneStartedRecording = true;
+            }
+        }
     }
 
     public void MicrophoneToAudioClip()
