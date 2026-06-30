@@ -306,6 +306,7 @@ MonoBehaviour:
   stepPoop: {fileID: 2077272401}
   stepScare: {fileID: 1751483163}
   uiTutorialDocument: {fileID: 1121176989}
+  uiEndScreen: {fileID: 1997756057}
   player: {fileID: 1196822022}
   tutorialBg: {fileID: 219229218}
 --- !u!1 &118566604
@@ -8113,7 +8114,7 @@ GameObject:
   - component: {fileID: 1997756056}
   - component: {fileID: 1997756057}
   m_Layer: 0
-  m_Name: Ui_EndScreen
+  m_Name: UI_EndScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8148,7 +8149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 04e72148b434ca14ba8b26a8450a85ce, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 06be53b5462047c449220e8c91e1cdca, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1

@@ -8,6 +8,7 @@ public class TutorialRunner : MonoBehaviour
     [SerializeField] private TutorialStep_Poop stepPoop;
     [SerializeField] private TutorialStep_ScarePeople stepScare;
     [SerializeField] private UIDocument uiTutorialDocument;
+    [SerializeField] private UIDocument uiEndScreen;
     [SerializeField] private GameObject player;
 
 
@@ -59,5 +60,7 @@ public class TutorialRunner : MonoBehaviour
         finalStep.Exit();
         tutorialBg.SetActive(false);
         player.SetActive(false);
+
+        uiEndScreen.rootVisualElement.Q<VisualElement>("EndScreenMenu").style.display = DisplayStyle.Flex;
     }
 }

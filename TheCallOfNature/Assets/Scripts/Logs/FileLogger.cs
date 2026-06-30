@@ -9,7 +9,7 @@ public class FileLogger : MonoBehaviour
 
     void Awake()
     {
-        string fileName = $"log_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
+        string fileName = $"log_{DateTime.UtcNow:yyyyMMdd_HHmmss}.txt";
         logFilePath = Path.Combine(Application.persistentDataPath, fileName);
         writer = new StreamWriter(logFilePath, true);
         writer.AutoFlush = true;
@@ -19,7 +19,7 @@ public class FileLogger : MonoBehaviour
 
     void HandleLog(string logString, string stackTrace, LogType type)
     {
-        writer.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] [{type}] {logString}");
+        writer.WriteLine($"[{DateTime.UtcNow:HH:mm:ss.fff}] [{type}] {logString}");
         if (type == LogType.Exception || type == LogType.Error)
             writer.WriteLine(stackTrace);
     }
