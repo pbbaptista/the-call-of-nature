@@ -28,14 +28,27 @@ internal class TutorialStep_Move : AbstractTutorialStep, ITutorialStep
             || Mathf.Abs(startPosition.y - currentPosition.y) > threshold)
         {
             if (!movedRight && currentPosition.x > startPosition.x + threshold)
+            {
                 movedRight = true;
+                Debug.Log($"Success moving right");
+            }
             else if (!movedLeft && currentPosition.x < startPosition.x - threshold)
+            {
                 movedLeft = true;
+                Debug.Log($"Success moving left");
+            }
 
             if (!movedUp && currentPosition.y > startPosition.y + threshold)
+            {
                 movedUp = true;
+                Debug.Log($"Success moving up");
+            }
             else if (!movedDown && currentPosition.y < startPosition.y - threshold)
+            {
                 movedDown = true;
+                Debug.Log($"Success moving down");
+            }
+                
 
             if (TutorialMovementComplete)
             {

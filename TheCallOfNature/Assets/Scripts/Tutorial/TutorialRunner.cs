@@ -20,6 +20,7 @@ public class TutorialRunner : MonoBehaviour
     void Start()
     {
         tutorialBg.SetActive(true);
+        Debug.Log($"Started Tutorial");
 
         Begin(stepScare, "scare", unlockMovement: false);
 
@@ -61,6 +62,7 @@ public class TutorialRunner : MonoBehaviour
         tutorialBg.SetActive(false);
         player.SetActive(false);
 
+        Debug.Log($"Ended Tutorial");
         uiEndScreen.rootVisualElement.Q<VisualElement>("EndScreenMenu").style.display = DisplayStyle.Flex;
     }
 }
