@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -43,6 +44,8 @@ public class UiController : MonoBehaviour
         {
             Debug.LogError("UiController: UiMainChar not found in UI Document");
         }
+
+        Debug.Log($"Game loaded");
     }
 
     void OnDestroy()
@@ -53,6 +56,7 @@ public class UiController : MonoBehaviour
 
     void LeaveStartMenu()
     {
+        Debug.Log($"Play button clicked. Leaving Start Menu");
         playButton.style.display = DisplayStyle.None;
         gameTitle.style.display = DisplayStyle.None;
         uiMainChar.style.display = DisplayStyle.None;      

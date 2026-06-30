@@ -9,6 +9,7 @@ public abstract class AbstractTutorialStep : MonoBehaviour
 
     internal void Complete()
     {
+        Debug.Log($"Completed Tutorial step \"{_directiveName}\" ");
         OnCompleted.Invoke();
     }
     
@@ -27,9 +28,12 @@ public abstract class AbstractTutorialStep : MonoBehaviour
 
     internal void Enter(UIDocument uiTutorialDocument, string directiveName)
     {
-        this.enabled = true;
+
         _uiTutorialDocument = uiTutorialDocument;
         _directiveName = directiveName;
+        Debug.Log($"Started Tutorial step \"{_directiveName}\" ");
+        
+        this.enabled = true;
         ShowStepDirective();
     }
 
@@ -37,6 +41,7 @@ public abstract class AbstractTutorialStep : MonoBehaviour
     {
         HideStepDirective();
         this.enabled = false;
+        Debug.Log($"Exited Tutorial step \"{_directiveName}\" ");
     }
 
 }
