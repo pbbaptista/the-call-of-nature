@@ -28,11 +28,13 @@ public class PersonController : MonoBehaviour
             // move right
             : new Vector2(gameObject.transform.position.x + Screen.width / 2f, gameObject.transform.position.y);
 
+        Debug.Log($"Moving Person {nameof(gameObject.name)} to {newPosition.normalized}");
         rb.linearVelocityX = newPosition.x * moveSpeed;
     }
 
     void OnBecameInvisible()
     {
+        Debug.Log($"Destroying Person {nameof(gameObject.name)} that moved off-screen");
         Destroy(gameObject);
     }
 }

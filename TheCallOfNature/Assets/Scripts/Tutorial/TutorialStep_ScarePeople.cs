@@ -13,9 +13,11 @@ internal class TutorialStep_ScarePeople : AbstractTutorialStep, ITutorialStep
             || Application.HasUserAuthorization(UserAuthorization.Microphone))
         {
             // The user has authorized use of the microphone.
+            Debug.Log($"User has given permission to use {nameof(Permission.Microphone)}");
         }
         else
         {
+            Debug.Log($"Requesting user permission to use {nameof(Permission.Microphone)}");
             // The user has not authorized microphone usage.
             // Ask for microphone permission.
             Permission.RequestUserPermission(Permission.Microphone);

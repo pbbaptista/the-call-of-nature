@@ -24,7 +24,10 @@ public class PlayerController : MonoBehaviour
         {
             soundwave.SetActive(true);
             // scare people away
-            Debug.Log("Sound from mic is loud enough to scare people away");
+            Debug.Log($"Triggering soundwave that scares people away. \r\n" +
+                $" {nameof(loudness)}: {loudness}, \r\n " +
+                $"{nameof(loudnessSensibility)} : {loudnessSensibility}, \r\n" +
+                $" {nameof(audioThreshold)}: {audioThreshold}.");
         }
         else
         {
